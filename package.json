@@ -1,30 +1,20 @@
 {
   "name": "team-challenge-mongoose-testing",
   "version": "1.0.0",
-  "description": "Téneis que crear una API en Node.js utilizando Express con mongoose que consistirá en una red social, donde podras crear, ver publicaciones, actulizar y borrarlas.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lpz8/team-challenge-mongoose-testing.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lpz8/team-challenge-mongoose-testing/issues"
-  },
-  "homepage": "https://github.com/lpz8/team-challenge-mongoose-testing#readme",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "jest": "^30.0.0",
-    "mongoose": "^8.15.2",
-    "supertest": "^7.1.1"
+    "express": "^4.x.x",
+    "mongoose": "^6.x.x",
+    "dotenv": "^16.x.x",
+    "jest": "^29.x.x",
+    "supertest": "^6.x.x"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^2.x.x"
   }
 }
