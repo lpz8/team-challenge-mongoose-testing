@@ -15,6 +15,10 @@ app.use(express.json());
 app.use('/api/posts', postsRouter);
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server corriendo en http://localhost:${PORT} - Incluido el ${new Date().toLocaleString()}`);
-});
+// Levantar el servidor solo si no estamos en el entorno de pruebas
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+}
+
+// Exportar la app para usarla en los tests
+module.exports = app;
